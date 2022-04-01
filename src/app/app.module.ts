@@ -9,6 +9,8 @@ import { PaginaPrincipalComponent } from './components/pagina-principal/pagina-p
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { VerEmpresasComponent } from './components/ver-empresas/ver-empresas.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
