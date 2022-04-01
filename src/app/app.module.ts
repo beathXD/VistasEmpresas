@@ -22,7 +22,9 @@ import { VerEmpresasComponent } from './components/ver-empresas/ver-empresas.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
