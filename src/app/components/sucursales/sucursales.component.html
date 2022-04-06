@@ -1,0 +1,44 @@
+
+
+  <!-- Button trigger modal -->
+<button class ="boton" type="button" class="btnb btn-Success" data-bs-toggle="modal" data-bs-target="#agregarempresa">
+  Agregar Sucursal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="agregarempresa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Sucuesal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form >
+            <div class="">
+            <label for="nombre">Nombre de la Sucursal</label>
+            <input type="text" id="nombre" class="form-controlador" name="nombreEmpresa" #nombreEmpresa="ngModel"
+            [(ngModel)] = "sucursalesmodelpost.nombreSucursal">
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btnc btn-warning" data-bs-dismiss="modal" >Cerrar</button>
+        <button type="button" class="btng btn-Primary" data-bs-dismiss="modal"(click) = 'postSucursal()'>Gurdar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <ul class="cards"  >
+    <li class="cards__item" *ngFor="let prod of sucursalesModelGet" >
+      <div class="card" >
+        <div class="card__image card__image--fence"></div>
+        <div class="card__content">
+          <div class="card__title">{{prod.nombreEmpresa}}</div>
+          <p class="card__text">La empresa esta en uso </p>
+        </div>
+      </div>
+      </li>
+    </ul>
